@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My portfolio</title>
+</head>
+<body>
+  <header>
+    <h1>Soumya Ghosh</h1>
+    <p>Web Developer | Designer | Tech Enthusiast</p>
+    </header>
+    <nav>
+      <a href="#about">About me</a>
+      <a href="#Skills">Skills</a>
+      <a href="#project">Projects</a>
+      <a href="#Certification">Certification</a>
+      <a href="#resume">Resume</a>
+      <a href="#Contact">Contact</a>
+    </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <img src="Mypicture.jpg" alt="your Photo" class="profile-pic"/>
+    <p>Hello! I,am a web Developer passionate about building and user-friendly websites.I have experience in HTML,CSS,JavaScript and more.Cuuerntly I persuing BCA at JIS University.</p>
+  </section>
+  <section id="Skills">
+  <h2>Skills</h2>
+  <ul>
+    <li>HTML,CSS,JavaScript</li>
+    <li>C++</li>
+    <li>Java</li>
+    <li>Data Structure</li>
+  </ul>
+  </section>
+  <section id="project">
+  <h2>Projects</h2>
+  <ul>
+    <li>E-commerce websites
+      <ul type="box"><li>Description:<br><p>A simple responsive websites built using HTML,CSS and JavaScript.</p></li>
+    <li>Features: <br>
+    <ol type="1">
+      <li>Product listing with images and price</li>
+      <li>Detail Product view with "Add to cart"</li>
+      <li>Responsive Design for mobile and desktop</li>
+      <li>Basic user forms</li> 
+      <li>Smooth UI with css animation</li>
+    </ol></li>
+    <li>Tech used: </li>
+    <ol type="1"><li>HTML</li>
+    <li>CSS</li>
+  <li>JavaScript</li>
+</ol> </ul>
+
+    </li>
+    <li>Grocery management websites</li>
+    <ul type="box">
+      <li>Description: <br><p>A simple responsive websites built using HTML,CSS and JavaScript, designed to manage daily grocery item efficiently.</p></li>
+      <li>Features:
+        <ol type="1">
+          <li>Add,update,delete grocery items.</li>
+          <li>Track item quantity and price.</li>
+          <li>Real time search and filtering.</li>
+          <li>Responsive Design for all devices.</li>
+          <li>Simple and user friendly interface.</li>
+        </ol>
+      </li>
+      <li>Tech used: 
+          <ol type="1">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ol>
+        </li>
+      </ul>
+    <li>Game development</li>
+  </ul>
+  </section>
+  <section id="Certification">
+    <h2>Certification</h2>
+    <ul>
+      <li><a href="certificate 2.pdf">Web development for beginners - Simplilearn</a></li>
+      <li><a href="certificate  about machine learing.pdf">Inroduction to Artificial Intelligence - Simplilearn</a></li>
+    </ul>
+  </section>
+  <section id="resume">
+    <h2>Resume</h2>
+    <button onclick="downloadResume()" class="download-btn">Download Resume</button>
+    <script>
+      function downloadResume()
+      {
+        const link=document.createElement('a');
+        link.href='Soumya Ghosh resume.pdf';
+        link.download='Soumya Ghosh resume.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }
+    </script>
+  </section>
+  <section id="Contact">
+    <h2>Contact Details</h2>
+    <p>Mobile: <a href="tel:+918967867874" style="color: blue;"> +91 8967867874</a></p>
+    <p>Email: <a href="mailto:ghoshsoumya183@gmail.com" style="color: blue;"> ghoshsoumya183@gmal.com</a></p>
+    <p>LinkedIn:<a href="https://www.linkedin.com/in/soumya-ghosh-738a23309" style="color: blue;">Click here to view my LinkedIn profile</a></p>
+  </section>
+    <footer>
+      <p>&copy; 2025 Soumya Ghosh.<br>All rights are reserved</p>
+    </footer>
+</body>
+</html>
